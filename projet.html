@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Line Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><span style="color:red">V</span>alorant <span style="color:red">L</span>ine <span style="color:red">U</span>p</a>     
+            <div class="nav-links">
+                <ul>
+                    <li class="map">
+                        <a href=""><span class="m">M</span>ap</a>
+                        <ul class="liste-map">
+                            <li>
+                                <a href="#" ><span class="m">A</span>scent</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">B</span>ind</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">B</span>reeze</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">F</span>racture</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">H</span>aven</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">I</span>cebox</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="m">S</span>plit</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="Agent">
+                        <a href=""><span class="a">A</span>gent</a>
+                        <ul class="liste-agents">
+                            <li>
+                                <a href="#"><span class="a">B</span>rimstone</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">C</span>ypher</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">F</span>ade</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">K</span>AY/O</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">K</span>illjoy</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">P</span>hoenix</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">S</span>age</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">S</span>ova</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="a">V</span>iper</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <img src="menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+    </header>
+    
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+ 
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
