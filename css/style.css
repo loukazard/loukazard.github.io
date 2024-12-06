@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lovely-home');
+
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+main h2 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px;
+}
+
+main .grand_trait {
+    height: 1px;
+    margin: -3px auto;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.080);
+
+}
+
+/**********HEADER*******/
+
+.ImagePrincipale {
+    padding-top: 60px;
+    background: url(../images/fond.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+.ImagePrincipale h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    margin-top: 11%;
+    padding-bottom: 5px;
+}
+.ImagePrincipale h2 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.PremierTrait {
+    height: 1px;
+    background-color: white;
+    width: 25%;
+    margin: -3px auto;
+}
+
+.navbar {
+    z-index: 1000;
+    background-color: rgb(20,18,19);
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .logo {
+    font-size: 3em;
+    font-style: bold;
+    font-family: 'Lovely Home', sans-serif;
+}
+
+
+
+nav .navlinks ul{
+    display: flex;
+}
+
+nav .navlinks ul li {
+    margin:  0 15px;
+    font-size: 1.2em;
+}
+
+.navbar .navlinks a:active {
+    color: orange;
+    font-weight: 600;
+}
+
+.navbar .navlinks a:hover {
+    color: orange;
+    font-weight: 600;
+}
+
+nav .menu-hamburger {
+    /* Permet de cacher le menu et de la placer*/
+    display: none;
+    width: 35px;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+
+
+/***********PRESENTATION********/
+
+.Presentation {
+    background-color: white;
+    padding-bottom: 100px;
+    
+}
+
+.texte {
+    width: 100%; 
+    text-align: justify;
+}
+
+.Presentation h3 {
+    font-size: 2em;
+    font-style: bold;
+    text-transform: uppercase;
+    margin: 50px 50px 20px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Presentation p {
+    margin: 10px 50px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    font-size: 1.2vw;
+}
+
+.Presentation .photo {
+    float: left;
+    width : 150px; 
+    height : 150px;
+    border: none;
+    -moz-border-radius : 75px;
+    -webkit-border-radius : 75px;
+    border-radius : 75px;
+    margin: 0px 20px 0 150px;
+    shape-outside: margin-box;
+}
+
+/*********PORTFOLIO*******/
+
+.Portfolio {
+    margin: 10px 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+.Portfolio .contenu {
+    display: flex;
+}
+
+.Portfolio .titre {
+    padding: 200px 0;
+    color: white;
+    background-color: #d25a27;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.Portfolio h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Portfolio .titre p {
+    margin: 20px ;
+    max-width: 500px;
+}
+
+.Portfolio .contenu .titre .trait {
+    max-width: 50px;
+    height: 5px;
+    border-radius: 4px;
+    margin: -3px auto;
+    background-color: white;
+}
+
+.exemples {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Portfolio .exemples section {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.Portfolio img {
+    border-radius: 10px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 30px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0.7);
+}
+
+
+
+.Portfolio .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.Portfolio .description:hover {
+    opacity: 7;
+}
+
+
+
+.Portfolio .animation {
+    padding-bottom: 20px;
+}
+
+/*************Compétences*****************/
+
+.Competences {
+    max-width: 100%;
+    height: auto;
+    padding: 60px 13%;
+    position: relative;
+}
+
+.Competences .titre {
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.Competences .titre h2 {
+    margin-bottom: -5px;
+}
+
+.Competences .titre h2 span{
+    color: #85310c;
+    font-weight: 700;
+}
+
+.Competences .comp_princ {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+
+}
+
+.Competences .barre_comp .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.Competences .barre_comp .barre {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    border-radius: 4px;
+    background-color: rgb(200, 200, 200);
+}
+
+.Competences .barre_comp .barre .fill{
+    background-color: orange;
+    position: relative;
+    height: 10px;
+    border-radius: 4px;
+}
+
+
+/************************FORMATIONS & expériences****************/
+
+.Formations {
+    margin: 50px 40px;
+}
+
+.Formations .frises,
+.Formations .contenu {
+    display: flex;
+}
+
+.Formations .titre {
+    background-color: #d25a27;
+    max-width: 100%;
+    
+}
+
+
+
+.Formations .diplomes, 
+.Formations .experiences {
+    background-color: rgb(201, 201, 201);
+    max-width: 100%;
+    display: block;
+    position: relative;
+    padding: 50px;
+}
+
+.Formations ul {
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+}
+
+.Formations  ul li {
+    min-height: 100px;
+    border-left:1px dashed #d25a27;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+
+.Formations ul li:last-child {
+    border-left: 0;
+}
+
+.Formations  ul li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #d25a27;
+    height: 20px;
+    width: 20px;
+}
+
+.Formations .intitule {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+
+}
+
+.Formations .date {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Formations .titre {
+    padding: 200px 0;
+    color: white;
+    background-color: #d25a27;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    
+}
+
+.Formations button {
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;
+    outline: none;
+    margin: 50px;
+    
+}
+
+.Formations a {
+    color: white;
+}
+
+.Formations h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Formations .titre p {
+    margin: 20px ;
+    max-width: 500px;
+    text-align: center;
+}
+
+.Formations .contenu .titre .trait {
+    max-width: 50px;
+    height: 5px;
+    border-radius: 4px;
+    margin: -3px auto;
+    background-color: white;
+}
+
+
+/*************contact************/
+
+.Contact {
+    margin: 100px 0;
+    background-color: white;
+}
+
+.Contact .titre {
+    padding: 10px 40px 20px 0;
+}
+
+.Contact .titre h2 span{
+    color: #d25a27;
+    font-weight: 700;
+}
+
+.Contact .boite {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    background-color: #f9f9fb;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px -10px #d6d6d6;
+}
+
+.Contact .Formulaire {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+
+}
+
+.Contact .Formulaire form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.Contact .Formulaire form input {
+    width: 47%;
+    
+}
+
+.Contact .Formulaire form input:hover,
+.Contact .Formulaire form textarea:hover {
+    border-bottom: 2px solid #d25a27;
+}
+
+.Contact .Formulaire form input,
+.Contact .Formulaire form textarea {
+    margin: 10px 0;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.Contact .Formulaire form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 35px;
+}
+
+.Contact .Formulaire form button {
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #d25a27;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.Contact .infos {
+    border-left: 1px solid #d6d6d6;
+    padding-left: 135px;
+}
+
+.Contact a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Contact .infos .titre {
+    margin: 0;
+}
+
+
+.Contact .infos section {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+.Contact .infos i {
+    margin-right: 10px;
+    font-size: 2em;
+}
+
+.Contact .infos i p {
+    font-size: 1.5em;
+}
+
+/*****************projets***********/
+.Projets span {
+    color: #d25a27;
+    font-weight: 700;
+}
+
+.Projets .box {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    background-color: #f9f9fb;
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px -10px #98401a;
+}
+
+.Projets .box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 20px;
+}
+
+.Projets .texte {
+    max-width: 60%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50px;
+}
+
+.Projets .intro {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    margin: 0 40px;
+}
+
+.Projets .box .images {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*********footer********/
+
+footer {
+    background-color: rgb(20,18,19);
+}
+
+footer a {
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer li {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 10px;
+}
