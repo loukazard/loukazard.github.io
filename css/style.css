@@ -380,7 +380,7 @@ nav .menu-hamburger {
     cursor: pointer;
     outline: none;
     margin: 50px;
-    text-align: center;
+    display: block;    
 }
 
 .Formations a {
