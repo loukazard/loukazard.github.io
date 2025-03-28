@@ -220,14 +220,9 @@ nav .menu-hamburger {
     justify-content: center;
     align-items: center;
     color: #fff;
-    opacity: 1;
+    opacity: 10;
 
 }
-
-.Portfolio .description:hover {
-    opacity: 7;
-}
-
 
 
 .Portfolio .animation {
