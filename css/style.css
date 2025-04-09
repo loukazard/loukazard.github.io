@@ -547,7 +547,8 @@ nav .menu-hamburger {
 .Projets .texte {
     max-width: 60%;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .Projets .intro {
