@@ -1,0 +1,14 @@
+config:
+  target: "https://loukazard.github.io"
+  phases:
+    - duration: 60
+      arrivalRate: 10
+  ensure:
+    maxErrorRate: 1
+    max: 500
+scenarios:
+  - flow:
+      - get:
+          url: "/"
+          expect:
+            - statusCode: 200
