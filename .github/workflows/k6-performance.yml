@@ -22,5 +22,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y k6
 
-      - name: Run Performance Test
-        run: k6 run load-test.js
+      - name: Install k6-reporter
+        run: |
+          curl -sL https://github.com/szkiba/k6-reporter/releases/latest/download/install.sh | bash
+
+      - name: Run k6 and export summary
+        run: |
+          k6 run --summary-export=summary.json load-test.js
+          k6-reporter --out=report.html summary.json
+
+      - name: Upload HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: k6-html-report
+          path: report.html
