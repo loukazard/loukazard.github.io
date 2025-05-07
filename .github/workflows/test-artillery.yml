@@ -1,4 +1,4 @@
-ame: Artillery Socket.IO Load Test
+name: Artillery Socket.IO Load Test
  
 on:
   push:
